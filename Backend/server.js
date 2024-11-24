@@ -46,6 +46,9 @@ app.use(
 app.use(cookieParser())
 app.use(express.json());
 
+app.get('/',async(req,res) => {
+    res.send("Welcome to AgriBasket Server!")
+})
 
 app.use('/api/auth',authRouter)
 app.use('/api/admin/products',adminProductsRouter)
