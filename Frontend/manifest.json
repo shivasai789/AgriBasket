@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Your Extension Name",
+    "version": "1.0",
+    "description": "Description of your extension",
+    "permissions": [],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "fonts/Inter/*.woff2",
+          "fonts/Inter/*.woff",
+          "media/webFonts/opensans/*.woff2",
+          "media/webFonts/opensans/*.woff"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
